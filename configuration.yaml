@@ -1,0 +1,19 @@
+mqtt:
+  sensor:
+    - name: "Indu Temperature"
+      state_topic: "home/indu2025/sensor"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature }}"
+
+    - name: "Indu Humidity"
+      state_topic: "home/indu2025/sensor"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+
+    - name: "Indu Vibration"
+      state_topic: "home/indu2025/sensor"
+      value_template: "{{ value_json.vibration }}"
+
+    - name: "Indu Student Name"
+      state_topic: "home/indu2025/sensor"
+      value_template: "{{ value_json.student_name }}"
